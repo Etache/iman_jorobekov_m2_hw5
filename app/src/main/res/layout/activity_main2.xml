@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/titleLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="140dp"
+        android:layout_marginBottom="420dp"
+        android:text="REGISTER"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="25dp"
+        android:drawableLeft="@drawable/icon_user"
+        android:hint="David Ampylda"
+        android:textColorHint="#595971"
+        android:backgroundTint="#959595"
+        android:id="@+id/usernameInput"
+        app:layout_constraintTop_toBottomOf="@+id/titleLogin"
+        tools:layout_editor_absoluteX="55dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="17dp"
+        android:drawableLeft="@drawable/icon_email"
+        android:hint="evaelfie55@gmail.com"
+        android:textColorHint="#595971"
+        android:backgroundTint="#959595"
+        android:id="@+id/emailInput"
+        app:layout_constraintTop_toBottomOf="@+id/usernameInput"
+        tools:layout_editor_absoluteX="55dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="17dp"
+        android:drawableLeft="@drawable/icons_phone"
+        android:hint="+996 505 112 162"
+        android:textColorHint="#595971"
+        android:backgroundTint="#959595"
+        android:id="@+id/phoneInput"
+        app:layout_constraintTop_toBottomOf="@+id/emailInput"
+        tools:layout_editor_absoluteX="55dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginHorizontal="35dp"
+        android:layout_marginTop="17dp"
+        android:drawableLeft="@drawable/icon_password"
+        android:hint="*******"
+        android:textColorHint="#595971"
+        android:backgroundTint="#959595"
+        android:id="@+id/passwordInput"
+        app:layout_constraintTop_toBottomOf="@+id/phoneInput"
+        tools:layout_editor_absoluteX="55dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="25dp"
+        android:text="REGISTER"
+        android:textSize="20sp"
+        android:background="@drawable/gradient"
+        app:layout_constraintTop_toBottomOf="@+id/passwordInput"
+        tools:layout_editor_absoluteX="55dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/alternativeSolution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Already have an account?"
+        android:textColor="#595971"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="100dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15px"
+        android:text="LogIn"
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin"
+        app:layout_constraintStart_toEndOf="@+id/alternativeSolution"
+        />
+
+
+    <View
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/dark_balls"
+        android:layout_marginLeft="140dp"
+        app:layout_constraintBottom_toBottomOf="@id/topBall"
+        app:layout_constraintStart_toEndOf="@id/topBall"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:background="@drawable/dark_balls"
+        android:id="@+id/topBall"
+        android:layout_marginLeft="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/dark_balls"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/smallBall"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="75dp" />
+
+    <View
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:background="@drawable/gradient"
+        app:layout_constraintTop_toTopOf="@id/smallBall"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="250dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
